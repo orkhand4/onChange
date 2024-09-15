@@ -1,10 +1,12 @@
 const inpt_tag = document.querySelector('#inpt');
+const btn_tag = document.querySelector('#btn');
 
-let a = 0
+inpt_tag.addEventListener('input', (event) => {
 
-inpt_tag.addEventListener('input', () => {
-  
-  a++
-  console.log(a);
+  console.log(event.target.value)
+});
+
+btn_tag.addEventListener('click', (event) => {
+  console.log(event.target.innerText)
   
 })
